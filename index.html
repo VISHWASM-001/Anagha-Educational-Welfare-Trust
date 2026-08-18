@@ -1,0 +1,1203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Anagha Educational & Welfare Trust - Empowering communities through education, healthcare, women empowerment, and environmental sustainability."
+    />
+    <title>Anagha Educational &amp; Welfare Trust</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============ HEADER / NAVIGATION ============ -->
+    <header class="header" id="header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a
+          href="#home"
+          class="nav__logo"
+          aria-label="Anagha Educational and Welfare Trust home"
+        >
+          <span class="nav__logo-mark"></span>
+          <span class="nav__logo-text">
+            <span class="nav__logo-title">Anagha</span>
+            <span class="nav__logo-sub">Educational &amp; Welfare Trust</span>
+          </span>
+        </a>
+
+        <ul class="nav__menu" id="navMenu">
+          <li><a href="#home" class="nav__link">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#programs" class="nav__link">Programs</a></li>
+          <li><a href="#impact" class="nav__link">Impact</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+          <li class="nav__cta-mobile">
+            <a href="donate.html" class="btn btn--accent btn--block">Donate</a>
+          </li>
+        </ul>
+
+        <div class="nav__actions">
+          <a href="donate.html" class="btn btn--accent nav__donate"
+            >Donate Now</a
+          >
+          <button
+            class="nav__toggle"
+            id="navToggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="navMenu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ============ HERO SLIDER ============ -->
+    <section class="hero" id="home" aria-label="Hero slider">
+      <div class="hero__slider" id="heroSlider">
+        <div
+          class="hero__slide active"
+          style="background-image: url(&quot;images/hero/hero school.png&quot;)"
+        >
+          <div class="hero__overlay"></div>
+          <div class="hero__content container">
+            <p class="hero__eyebrow">Empowering Education</p>
+            <h1 class="hero__title">Education For Every Child</h1>
+            <p class="hero__text">
+              Every child deserves access to quality education. Together we can
+              light the lamp of learning in young lives.
+            </p>
+            <div class="hero__buttons">
+              <a href="donate.html" class="btn btn--accent">Donate Now</a>
+              <a href="#about" class="btn btn--ghost">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="hero__slide"
+          style="background-image: url(&quot;images/hero/hero doctor.png&quot;)"
+        >
+          <div class="hero__overlay"></div>
+          <div class="hero__content container">
+            <p class="hero__eyebrow">Healthcare For Everyone</p>
+            <h1 class="hero__title">Bringing Health To Every Doorstep</h1>
+            <p class="hero__text">
+              Providing healthcare support to underserved communities through
+              free medical camps and awareness drives.
+            </p>
+            <div class="hero__buttons">
+              <a href="donate.html" class="btn btn--accent">Donate Now</a>
+              <a href="#programs" class="btn btn--ghost">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="hero__slide"
+          style="background-image: url(&quot;images/hero/hero women.png&quot;)"
+        >
+          <div class="hero__overlay"></div>
+          <div class="hero__content container">
+            <p class="hero__eyebrow">Women Empowerment</p>
+            <h1 class="hero__title">Building Strong Communities</h1>
+            <p class="hero__text">
+              Helping women become financially independent through skill
+              training and livelihood support.
+            </p>
+            <div class="hero__buttons">
+              <a href="#donate" class="btn btn--accent">Donate Now</a>
+              <a href="#programs" class="btn btn--ghost">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="hero__slide"
+          style="
+            background-image: url(&quot;images/hero/hero agriculture.png&quot;);
+          "
+        >
+          <div class="hero__overlay"></div>
+          <div class="hero__content container">
+            <p class="hero__eyebrow">Environment</p>
+            <h1 class="hero__title">Protect Our Environment</h1>
+            <p class="hero__text">
+              Creating a greener future together, one tree at a time, for
+              generations to come.
+            </p>
+            <div class="hero__buttons">
+              <a href="#donate" class="btn btn--accent">Donate Now</a>
+              <a href="#programs" class="btn btn--ghost">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="hero__slide"
+          style="
+            background-image: url(&quot;images/hero/hero volunteer.png&quot;);
+          "
+        >
+          <div class="hero__overlay"></div>
+          <div class="hero__content container">
+            <p class="hero__eyebrow">Join Us</p>
+            <h1 class="hero__title">Together We Make A Difference</h1>
+            <p class="hero__text">
+              Join us in transforming lives. Every hand that helps brings hope
+              to someone in need.
+            </p>
+            <div class="hero__buttons">
+              <a href="donate.html" class="btn btn--accent">Donate Now</a>
+              <a href="#volunteer" class="btn btn--ghost">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="hero__arrow hero__arrow--prev"
+          id="heroPrev"
+          aria-label="Previous slide"
+        >
+          &#10094;
+        </button>
+        <button
+          class="hero__arrow hero__arrow--next"
+          id="heroNext"
+          aria-label="Next slide"
+        >
+          &#10095;
+        </button>
+
+        <div
+          class="hero__dots"
+          id="heroDots"
+          role="tablist"
+          aria-label="Slide navigation"
+        ></div>
+      </div>
+    </section>
+
+    <!-- ============ IMPACT COUNTERS ============ -->
+    <section class="impact" id="impact" aria-label="Our impact in numbers">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-head__eyebrow">Our Impact</p>
+          <h2 class="section-head__title">
+            Changing Lives, One Step At A Time
+          </h2>
+          <p class="section-head__text">
+            Every number represents a life touched, a family supported, and a
+            future transformed.
+          </p>
+        </div>
+
+        <div class="impact__grid">
+          <div class="impact__card">
+            <div class="impact__icon" aria-hidden="true">&#128218;</div>
+            <div class="impact__number" data-target="12500" data-suffix="+">
+              0
+            </div>
+            <p class="impact__label">Students Educated</p>
+          </div>
+          <div class="impact__card">
+            <div class="impact__icon" aria-hidden="true">&#127973;</div>
+            <div class="impact__number" data-target="320" data-suffix="+">
+              0
+            </div>
+            <p class="impact__label">Medical Camps</p>
+          </div>
+          <div class="impact__card">
+            <div class="impact__icon" aria-hidden="true">&#128105;</div>
+            <div class="impact__number" data-target="4800" data-suffix="+">
+              0
+            </div>
+            <p class="impact__label">Women Empowered</p>
+          </div>
+          <div class="impact__card">
+            <div class="impact__icon" aria-hidden="true">&#127968;</div>
+            <div class="impact__number" data-target="9600" data-suffix="+">
+              0
+            </div>
+            <p class="impact__label">Families Supported</p>
+          </div>
+          <div class="impact__card">
+            <div class="impact__icon" aria-hidden="true">&#127794;</div>
+            <div class="impact__number" data-target="25000" data-suffix="+">
+              0
+            </div>
+            <p class="impact__label">Trees Planted</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about" aria-label="About the trust">
+      <div class="container about__grid">
+        <div class="about__media">
+          <img
+            src="images/baby.png"
+            alt="Anagha Trust volunteers and community members together"
+            loading="lazy"
+          />
+          <div class="about__badge">
+            <span class="about__badge-num">15+</span>
+            <span class="about__badge-text">Years of Service</span>
+          </div>
+        </div>
+
+        <div class="about__body">
+          <p class="section-head__eyebrow">About The Trust</p>
+          <h2 class="section-head__title about__title">
+            A Mission Driven By Compassion &amp; Action
+          </h2>
+          <p class="about__text">
+            Anagha Educational &amp; Welfare Trust is a non-profit organization
+            dedicated to uplifting underserved communities through education,
+            healthcare, women empowerment, and environmental sustainability. For
+            over a decade, we have worked at the grassroots to create lasting
+            change.
+          </p>
+
+          <div class="about__mvv">
+            <div class="about__mvv-item">
+              <h3 class="about__mvv-title">Our Mission</h3>
+              <p>
+                To provide quality education, healthcare, and livelihood
+                opportunities to marginalized communities, empowering them to
+                build self-reliant futures.
+              </p>
+            </div>
+            <div class="about__mvv-item">
+              <h3 class="about__mvv-title">Our Vision</h3>
+              <p>
+                A society where every individual has access to education,
+                health, dignity, and the opportunity to thrive regardless of
+                their background.
+              </p>
+            </div>
+            <div class="about__mvv-item">
+              <h3 class="about__mvv-title">Core Values</h3>
+              <p>
+                Compassion, integrity, inclusivity, and sustainability guide
+                every decision we make and every life we touch.
+              </p>
+            </div>
+          </div>
+
+          <div class="about__features">
+            <div class="feature-card">
+              <div class="feature-card__icon" aria-hidden="true">&#128065;</div>
+              <h3>Transparency</h3>
+              <p>
+                Every rupee you donate is tracked and reported with complete
+                accountability.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card__icon" aria-hidden="true">&#129309;</div>
+              <h3>Community Support</h3>
+              <p>
+                We work hand-in-hand with local communities to address their
+                real needs.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card__icon" aria-hidden="true">&#127757;</div>
+              <h3>Sustainable Development</h3>
+              <p>
+                Our programs are designed to create long-term, lasting impact.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROGRAMS ============ -->
+    <section class="programs" id="programs" aria-label="Our programs">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-head__eyebrow">What We Do</p>
+          <h2 class="section-head__title">Our Programs &amp; Initiatives</h2>
+          <p class="section-head__text">
+            From classrooms to clinics, from skills to saplings — we serve
+            communities holistically.
+          </p>
+        </div>
+
+        <div class="programs__filters" role="tablist" aria-label="Filter programs by category">
+          <button type="button" class="programs__filter is-active" data-filter="all" role="tab" aria-selected="true">
+            All Programs
+          </button>
+          <button type="button" class="programs__filter" data-filter="education" role="tab" aria-selected="false">
+            Education
+          </button>
+          <button type="button" class="programs__filter" data-filter="health" role="tab" aria-selected="false">
+            Health
+          </button>
+          <button type="button" class="programs__filter" data-filter="empowerment" role="tab" aria-selected="false">
+            Empowerment
+          </button>
+          <button type="button" class="programs__filter" data-filter="environment" role="tab" aria-selected="false">
+            Environment
+          </button>
+          <button type="button" class="programs__filter" data-filter="community" role="tab" aria-selected="false">
+            Community
+          </button>
+        </div>
+
+        <p class="programs__count" id="programsCount" aria-live="polite"></p>
+
+        <div class="programs__grid">
+          <article class="program-card" data-category="education">
+            <div class="program-card__media">
+              <img
+                src="images/gallary/edu.png"
+                alt="Children in a classroom"
+                loading="lazy"
+              />
+            </div>
+            <div class="program-card__body">
+              <div class="program-card__icon" aria-hidden="true">&#128218;</div>
+              <h3 class="program-card__title">Education</h3>
+              <p class="program-card__text">
+                Free tuition, books, and learning centers for children from
+                low-income families.
+              </p>
+              <a href="#contact" class="program-card__link"
+                >Learn More &rarr;</a
+              >
+            </div>
+          </article>
+
+          <article class="program-card" data-category="health">
+            <div class="program-card__media">
+              <img
+                src="images/gallary/healthcare.png"
+                alt="Healthcare checkup"
+                loading="lazy"
+              />
+            </div>
+            <div class="program-card__body">
+              <div class="program-card__icon" aria-hidden="true">&#127973;</div>
+              <h3 class="program-card__title">Healthcare</h3>
+              <p class="program-card__text">
+                Free medical camps, health awareness drives, and access to
+                essential medicines.
+              </p>
+              <a href="#contact" class="program-card__link"
+                >Learn More &rarr;</a
+              >
+            </div>
+          </article>
+
+          <article class="program-card" data-category="empowerment">
+            <div class="program-card__media">
+              <img
+                src="https://images.pexels.com/photos/3194519/pexels-photo-3194519.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Women empowerment"
+                loading="lazy"
+              />
+            </div>
+            <div class="program-card__body">
+              <div class="program-card__icon" aria-hidden="true">&#128105;</div>
+              <h3 class="program-card__title">Women Empowerment</h3>
+              <p class="program-card__text">
+                Vocational training, micro-finance, and entrepreneurship support
+                for women.
+              </p>
+              <a href="#contact" class="program-card__link"
+                >Learn More &rarr;</a
+              >
+            </div>
+          </article>
+
+          <article class="program-card" data-category="empowerment">
+            <div class="program-card__media">
+              <img
+                src="https://images.pexels.com/photos/5212703/pexels-photo-5212703.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Skill development training"
+                loading="lazy"
+              />
+            </div>
+            <div class="program-card__body">
+              <div class="program-card__icon" aria-hidden="true">&#128295;</div>
+              <h3 class="program-card__title">Skill Development</h3>
+              <p class="program-card__text">
+                Job-oriented training in tailoring, computers, and trades for
+                youth and women.
+              </p>
+              <a href="#contact" class="program-card__link"
+                >Learn More &rarr;</a
+              >
+            </div>
+          </article>
+
+          <article class="program-card" data-category="community">
+            <div class="program-card__media">
+              <img
+                src="https://images.pexels.com/photos/6646917/pexels-photo-6646917.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Community welfare"
+                loading="lazy"
+              />
+            </div>
+            <div class="program-card__body">
+              <div class="program-card__icon" aria-hidden="true">&#127968;</div>
+              <h3 class="program-card__title">Community Welfare</h3>
+              <p class="program-card__text">
+                Food drives, ration kits, and support for elderly and
+                differently-abled individuals.
+              </p>
+              <a href="#contact" class="program-card__link"
+                >Learn More &rarr;</a
+              >
+            </div>
+          </article>
+
+          <article class="program-card" data-category="environment">
+            <div class="program-card__media">
+              <img
+                src="https://images.pexels.com/photos/7656721/pexels-photo-7656721.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Tree plantation"
+                loading="lazy"
+              />
+            </div>
+            <div class="program-card__body">
+              <div class="program-card__icon" aria-hidden="true">&#127794;</div>
+              <h3 class="program-card__title">Environmental Sustainability</h3>
+              <p class="program-card__text">
+                Tree plantation drives, waste management, and clean energy
+                awareness campaigns.
+              </p>
+              <a href="#contact" class="program-card__link"
+                >Learn More &rarr;</a
+              >
+            </div>
+          </article>
+
+          <article class="program-card" data-category="education">
+            <div class="program-card__media">
+              <img
+                src="https://images.pexels.com/photos/8423045/pexels-photo-8423045.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Scholarship award"
+                loading="lazy"
+              />
+            </div>
+            <div class="program-card__body">
+              <div class="program-card__icon" aria-hidden="true">&#127891;</div>
+              <h3 class="program-card__title">Scholarships</h3>
+              <p class="program-card__text">
+                Merit and need-based scholarships to help students pursue higher
+                education.
+              </p>
+              <a href="#contact" class="program-card__link"
+                >Learn More &rarr;</a
+              >
+            </div>
+          </article>
+
+          <article class="program-card" data-category="community">
+            <div class="program-card__media">
+              <img
+                src="https://images.pexels.com/photos/6646862/pexels-photo-6646862.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Disaster relief"
+                loading="lazy"
+              />
+            </div>
+            <div class="program-card__body">
+              <div class="program-card__icon" aria-hidden="true">&#127757;</div>
+              <h3 class="program-card__title">Disaster Relief</h3>
+              <p class="program-card__text">
+                Rapid response teams providing food, shelter, and medical aid
+                during crises.
+              </p>
+              <a href="#contact" class="program-card__link"
+                >Learn More &rarr;</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DONATION CAMPAIGNS (INTERACTIVE) ============ -->
+    <section
+      class="campaign"
+      id="campaign"
+      aria-label="Active donation campaigns"
+    >
+      <div class="container">
+        <div class="section-head">
+          <p class="section-head__eyebrow">Active Campaigns</p>
+          <h2 class="section-head__title">Fuel A Cause Close To Your Heart</h2>
+          <p class="section-head__text">
+            Pick a campaign below to see how your contribution creates
+            real, measurable change.
+          </p>
+        </div>
+
+        <div class="campaign-tabs" role="tablist" aria-label="Select a campaign">
+          <button
+            type="button"
+            class="campaign-tab is-active"
+            data-target="school"
+            role="tab"
+            aria-selected="true"
+            id="tab-school"
+          >
+            <span class="campaign-tab__icon" aria-hidden="true">&#127890;</span>
+            <span class="campaign-tab__label">Back To School</span>
+          </button>
+          <button
+            type="button"
+            class="campaign-tab"
+            data-target="health"
+            role="tab"
+            aria-selected="false"
+            id="tab-health"
+          >
+            <span class="campaign-tab__icon" aria-hidden="true">&#127973;</span>
+            <span class="campaign-tab__label">Healthcare For All</span>
+          </button>
+          <button
+            type="button"
+            class="campaign-tab"
+            data-target="women"
+            role="tab"
+            aria-selected="false"
+            id="tab-women"
+          >
+            <span class="campaign-tab__icon" aria-hidden="true">&#128105;</span>
+            <span class="campaign-tab__label">Women Empowerment</span>
+          </button>
+          <button
+            type="button"
+            class="campaign-tab"
+            data-target="green"
+            role="tab"
+            aria-selected="false"
+            id="tab-green"
+          >
+            <span class="campaign-tab__icon" aria-hidden="true">&#127795;</span>
+            <span class="campaign-tab__label">Green Anagha</span>
+          </button>
+        </div>
+
+        <div class="campaign__panels">
+          <!-- Panel: Back To School -->
+          <div
+            class="campaign__card campaign__panel is-active"
+            data-panel="school"
+            role="tabpanel"
+            aria-labelledby="tab-school"
+          >
+            <div class="campaign__media">
+              <img
+                src="images/school.png"
+                alt="Children education campaign"
+                loading="lazy"
+              />
+            </div>
+            <div class="campaign__body">
+              <p class="section-head__eyebrow">Featured Campaign</p>
+              <h2 class="campaign__title">Back To School — 2026</h2>
+              <p class="campaign__text">
+                Help us send 1,000 underprivileged children back to school
+                with books, uniforms, and supplies. Every contribution
+                brings a child closer to a brighter future.
+              </p>
+              <div class="campaign__progress">
+                <div class="campaign__progress-bar">
+                  <span class="campaign-progress-fill" data-width="68"></span>
+                </div>
+                <div class="campaign__amounts">
+                  <span class="campaign__raised">&#8377;6,80,000 raised</span>
+                  <span class="campaign__goal">Goal: &#8377;10,00,000</span>
+                </div>
+              </div>
+              <a href="#donate" class="btn btn--accent btn--lg"
+                >Donate To This Campaign</a
+              >
+            </div>
+          </div>
+
+          <!-- Panel: Healthcare -->
+          <div
+            class="campaign__card campaign__panel"
+            data-panel="health"
+            role="tabpanel"
+            aria-labelledby="tab-health"
+            hidden
+          >
+            <div class="campaign__media">
+              <img
+                src="images/hero/hero doctor.png"
+                alt="Free healthcare camp for underprivileged families"
+                loading="lazy"
+              />
+            </div>
+            <div class="campaign__body">
+              <p class="section-head__eyebrow">Featured Campaign</p>
+              <h2 class="campaign__title">Healthcare For All</h2>
+              <p class="campaign__text">
+                Support free medical camps, essential medicines, and health
+                check-ups for families who otherwise can't afford basic
+                healthcare.
+              </p>
+              <div class="campaign__progress">
+                <div class="campaign__progress-bar">
+                  <span class="campaign-progress-fill" data-width="53"></span>
+                </div>
+                <div class="campaign__amounts">
+                  <span class="campaign__raised">&#8377;4,20,000 raised</span>
+                  <span class="campaign__goal">Goal: &#8377;8,00,000</span>
+                </div>
+              </div>
+              <a href="#donate" class="btn btn--accent btn--lg"
+                >Donate To This Campaign</a
+              >
+            </div>
+          </div>
+
+          <!-- Panel: Women Empowerment -->
+          <div
+            class="campaign__card campaign__panel"
+            data-panel="women"
+            role="tabpanel"
+            aria-labelledby="tab-women"
+            hidden
+          >
+            <div class="campaign__media">
+              <img
+                src="images/hero/hero women.png"
+                alt="Women empowerment and skill training"
+                loading="lazy"
+              />
+            </div>
+            <div class="campaign__body">
+              <p class="section-head__eyebrow">Featured Campaign</p>
+              <h2 class="campaign__title">Women Empowerment Fund</h2>
+              <p class="campaign__text">
+                Fund vocational training, micro-finance, and entrepreneurship
+                support that helps women build independent, dignified
+                livelihoods.
+              </p>
+              <div class="campaign__progress">
+                <div class="campaign__progress-bar">
+                  <span class="campaign-progress-fill" data-width="52"></span>
+                </div>
+                <div class="campaign__amounts">
+                  <span class="campaign__raised">&#8377;3,10,000 raised</span>
+                  <span class="campaign__goal">Goal: &#8377;6,00,000</span>
+                </div>
+              </div>
+              <a href="#donate" class="btn btn--accent btn--lg"
+                >Donate To This Campaign</a
+              >
+            </div>
+          </div>
+
+          <!-- Panel: Green Anagha -->
+          <div
+            class="campaign__card campaign__panel"
+            data-panel="green"
+            role="tabpanel"
+            aria-labelledby="tab-green"
+            hidden
+          >
+            <div class="campaign__media">
+              <img
+                src="images/tree plantation.jpg"
+                alt="Tree plantation and environmental sustainability drive"
+                loading="lazy"
+              />
+            </div>
+            <div class="campaign__body">
+              <p class="section-head__eyebrow">Featured Campaign</p>
+              <h2 class="campaign__title">Green Anagha — Tree Plantation</h2>
+              <p class="campaign__text">
+                Help us plant and nurture 5,000 saplings across communities,
+                building a greener, cleaner future for the next generation.
+              </p>
+              <div class="campaign__progress">
+                <div class="campaign__progress-bar">
+                  <span class="campaign-progress-fill" data-width="63"></span>
+                </div>
+                <div class="campaign__amounts">
+                  <span class="campaign__raised">&#8377;1,90,000 raised</span>
+                  <span class="campaign__goal">Goal: &#8377;3,00,000</span>
+                </div>
+              </div>
+              <a href="#donate" class="btn btn--accent btn--lg"
+                >Donate To This Campaign</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials" id="testimonials" aria-label="Testimonials">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-head__eyebrow">Testimonials</p>
+          <h2 class="section-head__title">Voices Of Hope &amp; Gratitude</h2>
+          <p class="section-head__text">
+            Hear from the lives we have touched and the partners who walk with
+            us.
+          </p>
+        </div>
+
+        <div class="testimonial-slider" id="testimonialSlider">
+          <div class="testimonial-track" id="testimonialTrack">
+            <article class="testimonial">
+              <div class="testimonial__photo">
+                <img
+                  src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=200"
+                  alt="Rajesh Kumar"
+                  loading="lazy"
+                />
+              </div>
+              <p class="testimonial__quote">
+                &ldquo;Anagha Trust gave my daughter the books and tuition she
+                needed. Today she tops her class. I will be forever
+                grateful.&rdquo;
+              </p>
+              <h4 class="testimonial__name">Rajesh Kumar</h4>
+              <p class="testimonial__role">Parent, Bengaluru</p>
+            </article>
+
+            <article class="testimonial">
+              <div class="testimonial__photo">
+                <img
+                  src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=200"
+                  alt="Lakshmi Devi"
+                  loading="lazy"
+                />
+              </div>
+              <p class="testimonial__quote">
+                &ldquo;The tailoring training helped me start my own small
+                business. I now support my family with dignity and pride.&rdquo;
+              </p>
+              <h4 class="testimonial__name">Lakshmi Devi</h4>
+              <p class="testimonial__role">Beneficiary, Mysuru</p>
+            </article>
+
+            <article class="testimonial">
+              <div class="testimonial__photo">
+                <img
+                  src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200"
+                  alt="Dr. Arjun Reddy"
+                  loading="lazy"
+                />
+              </div>
+              <p class="testimonial__quote">
+                &ldquo;As a volunteer doctor, I have seen their medical camps
+                reach the most remote villages. Truly selfless service.&rdquo;
+              </p>
+              <h4 class="testimonial__name">Dr. Arjun Reddy</h4>
+              <p class="testimonial__role">Volunteer Doctor</p>
+            </article>
+
+            <article class="testimonial">
+              <div class="testimonial__photo">
+                <img
+                  src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=200"
+                  alt="Priya Sharma"
+                  loading="lazy"
+                />
+              </div>
+              <p class="testimonial__quote">
+                &ldquo;I have been a donor for three years. The transparency and
+                impact reports I receive make me confident in my support.&rdquo;
+              </p>
+              <h4 class="testimonial__name">Priya Sharma</h4>
+              <p class="testimonial__role">Regular Donor</p>
+            </article>
+          </div>
+
+          <div
+            class="testimonial__dots"
+            id="testimonialDots"
+            role="tablist"
+            aria-label="Testimonial navigation"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VOLUNTEER CTA ============ -->
+    <section
+      class="volunteer"
+      id="volunteer"
+      aria-label="Volunteer call to action"
+    >
+      <div class="container volunteer__inner">
+        <div class="volunteer__content">
+          <p class="section-head__eyebrow section-head__eyebrow--light">
+            Volunteer With Us
+          </p>
+          <h2 class="volunteer__title">Be The Change You Wish To See</h2>
+          <p class="volunteer__text">
+            Your time and skills can transform communities. Join our network of
+            passionate volunteers and help us reach more lives every day.
+          </p>
+          <a href="#contact" class="btn btn--accent btn--lg"
+            >Become a Volunteer</a
+          >
+        </div>
+        <div class="volunteer__media">
+          <img
+            src="https://images.pexels.com/photos/6646917/pexels-photo-6646917.jpeg?auto=compress&cs=tinysrgb&w=700"
+            alt="Volunteers helping community"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- ============ FAQ ============ -->
+    <section class="faq" id="faq" aria-label="Frequently asked questions">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-head__eyebrow">FAQ</p>
+          <h2 class="section-head__title">Frequently Asked Questions</h2>
+          <p class="section-head__text">
+            Everything you need to know about donating, volunteering, and our
+            work.
+          </p>
+        </div>
+
+        <div class="faq__list" id="faqList">
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Is my donation tax-deductible?<span
+                class="faq__icon"
+                aria-hidden="true"
+                >+</span
+              >
+            </button>
+            <div class="faq__answer">
+              <p>
+                Yes. Anagha Educational &amp; Welfare Trust is registered under
+                12A and approved under 80G of the Income Tax Act. You will
+                receive a tax-exemption receipt after donating.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              How is my donation used?<span class="faq__icon" aria-hidden="true"
+                >+</span
+              >
+            </button>
+            <div class="faq__answer">
+              <p>
+                Your donation funds our programs in education, healthcare, women
+                empowerment, and community welfare. We publish annual impact
+                reports so you can see exactly how funds are spent.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Can I volunteer without donating?<span
+                class="faq__icon"
+                aria-hidden="true"
+                >+</span
+              >
+            </button>
+            <div class="faq__answer">
+              <p>
+                Absolutely. We welcome volunteers for teaching, medical camps,
+                event organizing, and field work. Fill out the contact form and
+                our team will reach out with opportunities.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Can I sponsor a child's education?<span
+                class="faq__icon"
+                aria-hidden="true"
+                >+</span
+              >
+            </button>
+            <div class="faq__answer">
+              <p>
+                Yes. Our child sponsorship program lets you fund a child's
+                annual education for &#8377;12,000. Contact us to learn more
+                about sponsorship and receive regular updates on the child you
+                support.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Is my payment information secure?<span
+                class="faq__icon"
+                aria-hidden="true"
+                >+</span
+              >
+            </button>
+            <div class="faq__answer">
+              <p>
+                Yes. All payments are processed through encrypted, PCI-compliant
+                payment gateways. We never store your card or banking details on
+                our servers.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              How can my company partner with the trust?<span
+                class="faq__icon"
+                aria-hidden="true"
+                >+</span
+              >
+            </button>
+            <div class="faq__answer">
+              <p>
+                We welcome CSR partnerships. Reach out through the contact form
+                with your company details and our partnerships team will connect
+                with you to explore collaboration opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact" aria-label="Contact us">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-head__eyebrow">Contact</p>
+          <h2 class="section-head__title">Get In Touch With Us</h2>
+          <p class="section-head__text">
+            Have a question, idea, or want to collaborate? We would love to hear
+            from you.
+          </p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info">
+            <div class="contact__info-item">
+              <div class="contact__info-icon" aria-hidden="true">&#128205;</div>
+              <div>
+                <h4>Address</h4>
+                <p>
+                  Anagha Educational &amp; Welfare Trust,<br />
+                  No. 22/65 MIG-B KHB QUARTERS, 5th Phase, CHS-249 Yelahanka New
+                  Town, Bengaluru – 560 064, India<br />
+                </p>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <div class="contact__info-icon" aria-hidden="true">&#128222;</div>
+              <div>
+                <h4>Phone</h4>
+                <p>
+                  <a href="tel:+918012345678">+91 80123 45678</a><br /><a
+                    href="tel:+918087654321"
+                    >+91 80876 54321</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <div class="contact__info-icon" aria-hidden="true">&#9993;</div>
+              <div>
+                <h4>Email</h4>
+                <p>
+                  <a href="mailto:info@anagha-trust.org">info@anagha-trust.org</a
+                  ><br /><a href="mailto:donate@anagha-trust.org"
+                    >donate@anagha-trust.org</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="contact__map" aria-label="Map placeholder">
+              <iframe
+                title="Google Maps location of Anagha Trust"
+                src="https://maps.google.com/maps?q=13.103976,77.573477&z=18&output=embed"
+                loading="eager"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="cName">Your Name</label>
+              <input
+                type="text"
+                id="cName"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="cEmail">Email</label>
+              <input
+                type="email"
+                id="cEmail"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="cSubject">Subject</label>
+              <input
+                type="text"
+                id="cSubject"
+                name="subject"
+                placeholder="What is this about?"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="cMessage">Message</label>
+              <textarea
+                id="cMessage"
+                name="message"
+                rows="5"
+                placeholder="Write your message..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">
+              Send Message
+            </button>
+            <p class="form-message" id="contactMessage" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" aria-label="Site footer">
+      <div class="container footer__grid">
+        <div class="footer__col footer__col--about">
+          <a href="#home" class="footer__logo">
+            <span class="nav__logo-mark"></span>
+            <span>Anagha Trust</span>
+          </a>
+          <p class="footer__about">
+            Anagha Educational &amp; Welfare Trust is dedicated to empowering
+            communities through education, healthcare, and sustainable
+            development since 2010.
+          </p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook" class="footer__social-link">f</a>
+            <a href="#" aria-label="Twitter" class="footer__social-link">t</a>
+            <a href="#" aria-label="Instagram" class="footer__social-link"
+              >in</a
+            >
+            <a href="#" aria-label="YouTube" class="footer__social-link">yt</a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Programs</h4>
+          <ul>
+            <li><a href="#programs">Education</a></li>
+            <li><a href="#programs">Healthcare</a></li>
+            <li><a href="#programs">Women Empowerment</a></li>
+            <li><a href="#programs">Skill Development</a></li>
+            <li><a href="#programs">Disaster Relief</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#impact">Our Impact</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#volunteer">Volunteer</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__col--newsletter">
+          <div class="wa-subscribe">
+            <div class="wa-subscribe__icon">
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#ffffff">
+                <path d="M16.004 3C9.376 3 4 8.373 4 15c0 2.276.633 4.402 1.732 6.216L4 29l7.98-1.688A11.93 11.93 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3zm0 21.7c-1.95 0-3.77-.55-5.318-1.5l-.382-.227-4.73 1.001 1.02-4.6-.25-.395A9.66 9.66 0 0 1 6.3 15c0-5.35 4.353-9.7 9.704-9.7 5.35 0 9.7 4.35 9.7 9.7 0 5.352-4.35 9.7-9.7 9.7zm5.34-7.26c-.293-.147-1.734-.856-2.003-.954-.268-.098-.464-.147-.66.147-.196.293-.757.953-.928 1.15-.17.196-.34.22-.634.073-.293-.147-1.237-.456-2.356-1.454-.87-.776-1.458-1.735-1.629-2.028-.17-.293-.018-.451.128-.598.132-.131.293-.34.44-.51.146-.17.195-.293.293-.488.098-.196.049-.367-.024-.514-.073-.147-.66-1.59-.904-2.178-.238-.573-.48-.495-.66-.504-.17-.008-.366-.01-.562-.01-.196 0-.514.073-.783.367-.269.293-1.027 1.004-1.027 2.448 0 1.444 1.052 2.84 1.198 3.036.146.196 2.07 3.16 5.017 4.432.701.303 1.248.484 1.675.62.704.224 1.344.192 1.85.117.564-.084 1.734-.709 1.979-1.393.244-.684.244-1.27.171-1.393-.073-.122-.269-.196-.562-.343z"/>
+              </svg>
+            </div>
+            <h4 class="footer__heading">Talk to Us Instantly</h4>
+            <p>Share your name — we'll open WhatsApp so you can chat with us directly.</p>
+            <form class="wa-subscribe__form" id="newsletterForm" novalidate>
+              <input
+                type="text"
+                name="name"
+                id="waName"
+                placeholder="Your name"
+                aria-label="Your name"
+                required
+              />
+              <button type="submit" class="btn btn--accent wa-subscribe__btn">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor">
+                  <path d="M16.004 3C9.376 3 4 8.373 4 15c0 2.276.633 4.402 1.732 6.216L4 29l7.98-1.688A11.93 11.93 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3zm0 21.7c-1.95 0-3.77-.55-5.318-1.5l-.382-.227-4.73 1.001 1.02-4.6-.25-.395A9.66 9.66 0 0 1 6.3 15c0-5.35 4.353-9.7 9.704-9.7 5.35 0 9.7 4.35 9.7 9.7 0 5.352-4.35 9.7-9.7 9.7zm5.34-7.26c-.293-.147-1.734-.856-2.003-.954-.268-.098-.464-.147-.66.147-.196.293-.757.953-.928 1.15-.17.196-.34.22-.634.073-.293-.147-1.237-.456-2.356-1.454-.87-.776-1.458-1.735-1.629-2.028-.17-.293-.018-.451.128-.598.132-.131.293-.34.44-.51.146-.17.195-.293.293-.488.098-.196.049-.367-.024-.514-.073-.147-.66-1.59-.904-2.178-.238-.573-.48-.495-.66-.504-.17-.008-.366-.01-.562-.01-.196 0-.514.073-.783.367-.269.293-1.027 1.004-1.027 2.448 0 1.444 1.052 2.84 1.198 3.036.146.196 2.07 3.16 5.017 4.432.701.303 1.248.484 1.675.62.704.224 1.344.192 1.85.117.564-.084 1.734-.709 1.979-1.393.244-.684.244-1.27.171-1.393-.073-.122-.269-.196-.562-.343z"/>
+                </svg>
+                Chat on WhatsApp
+              </button>
+            </form>
+            <p class="form-message" id="newsletterMessage" role="status"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <p>
+            &copy; <span id="year"></span> Anagha Educational &amp; Welfare
+            Trust. All rights reserved.
+          </p>
+          <p>
+            <a href="#">Privacy Policy</a> &nbsp;|&nbsp;
+            <a href="#">Terms of Use</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============ BACK TO TOP ============ -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      &#8593;
+    </button>
+
+    <!-- ============ WHATSAPP FLOATING ICON ============ -->
+    <a
+      href="https://wa.me/919008762525?text=Hello%2C%20I%20would%20like%20to%20know%20more%20details%20about%20the%20trust"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat with us on WhatsApp"
+    >
+      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff">
+        <path d="M16.004 3C9.376 3 4 8.373 4 15c0 2.276.633 4.402 1.732 6.216L4 29l7.98-1.688A11.93 11.93 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3zm0 21.7c-1.95 0-3.77-.55-5.318-1.5l-.382-.227-4.73 1.001 1.02-4.6-.25-.395A9.66 9.66 0 0 1 6.3 15c0-5.35 4.353-9.7 9.704-9.7 5.35 0 9.7 4.35 9.7 9.7 0 5.352-4.35 9.7-9.7 9.7zm5.34-7.26c-.293-.147-1.734-.856-2.003-.954-.268-.098-.464-.147-.66.147-.196.293-.757.953-.928 1.15-.17.196-.34.22-.634.073-.293-.147-1.237-.456-2.356-1.454-.87-.776-1.458-1.735-1.629-2.028-.17-.293-.018-.451.128-.598.132-.131.293-.34.44-.51.146-.17.195-.293.293-.488.098-.196.049-.367-.024-.514-.073-.147-.66-1.59-.904-2.178-.238-.573-.48-.495-.66-.504-.17-.008-.366-.01-.562-.01-.196 0-.514.073-.783.367-.269.293-1.027 1.004-1.027 2.448 0 1.444 1.052 2.84 1.198 3.036.146.196 2.07 3.16 5.017 4.432.701.303 1.248.484 1.675.62.704.224 1.344.192 1.85.117.564-.084 1.734-.709 1.979-1.393.244-.684.244-1.27.171-1.393-.073-.122-.269-.196-.562-.343z"/>
+      </svg>
+    </a>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
