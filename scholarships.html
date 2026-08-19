@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Anagha Trust's Scholarship program offers merit and need-based scholarships to help students pursue higher education."
+    />
+    <title>Scholarships — Anagha Educational &amp; Welfare Trust</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Offset for the fixed header, since this page's first section isn't
+         a full-height hero like the homepage. */
+      .prog-hero {
+        padding-top: calc(var(--header-h) + var(--space-6));
+        padding-bottom: var(--space-10);
+        background: var(--bg);
+      }
+      .prog-breadcrumb {
+        display: block;
+        margin-bottom: var(--space-3);
+        font-size: 0.9rem;
+        color: var(--gray-600);
+      }
+      .prog-breadcrumb a {
+        color: inherit;
+        text-decoration: underline;
+      }
+      .prog-hero__grid {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: var(--space-8);
+        align-items: center;
+      }
+      .prog-hero__media {
+        position: relative;
+      }
+      .prog-hero__media img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-lg);
+      }
+      .prog-hero__icon {
+        font-size: 2rem;
+        margin-bottom: var(--space-2);
+      }
+      .prog-hero__text {
+        color: var(--gray-600);
+        margin: var(--space-3) 0 var(--space-4);
+      }
+      .prog-hero__buttons {
+        display: flex;
+        gap: var(--space-2);
+        flex-wrap: wrap;
+      }
+
+      .prog-highlights {
+        padding: var(--space-10) 0;
+        background: var(--card);
+      }
+      .prog-highlights__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-3);
+        margin-top: var(--space-4);
+      }
+
+      .prog-stats {
+        padding: var(--space-10) 0;
+        background: var(--bg);
+      }
+      .prog-stats__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-3);
+        margin-top: var(--space-4);
+      }
+
+      .prog-cta {
+        padding: var(--space-10) 0;
+        background: var(--primary);
+        color: #fff;
+        text-align: center;
+      }
+      .prog-cta h2 {
+        font-family: var(--font-heading);
+        font-weight: 600;
+        font-size: clamp(1.5rem, 3vw, 2.1rem);
+        margin-bottom: var(--space-2);
+      }
+      .prog-cta p {
+        color: var(--primary-50);
+        max-width: 620px;
+        margin: 0 auto var(--space-4);
+      }
+      .prog-cta__buttons {
+        display: flex;
+        gap: var(--space-2);
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      @media (max-width: 860px) {
+        .prog-hero__grid {
+          grid-template-columns: 1fr;
+        }
+        .prog-hero__media img {
+          height: 280px;
+        }
+        .prog-highlights__grid {
+          grid-template-columns: 1fr;
+        }
+        .prog-stats__grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a
+          href="index.html#home"
+          class="nav__logo"
+          aria-label="Anagha Educational and Welfare Trust home"
+        >
+          <span class="nav__logo-mark"></span>
+          <span class="nav__logo-text">
+            <span class="nav__logo-title">Anagha</span>
+            <span class="nav__logo-sub">Educational &amp; Welfare Trust</span>
+          </span>
+        </a>
+
+        <ul class="nav__menu" id="navMenu">
+          <li><a href="index.html#home" class="nav__link">Home</a></li>
+          <li><a href="index.html#about" class="nav__link">About</a></li>
+          <li><a href="index.html#programs" class="nav__link">Programs</a></li>
+          <li><a href="index.html#impact" class="nav__link">Impact</a></li>
+          <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+          <li class="nav__cta-mobile">
+            <a href="donate.html" class="btn btn--accent btn--block">Donate</a>
+          </li>
+        </ul>
+
+        <div class="nav__actions">
+          <a href="donate.html" class="btn btn--accent nav__donate"
+            >Donate Now</a
+          >
+          <button
+            class="nav__toggle"
+            id="navToggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="navMenu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ============ PROGRAM HERO ============ -->
+    <section class="prog-hero" id="scholarships" aria-label="Scholarships program overview">
+      <div class="container">
+        <span class="prog-breadcrumb">
+          <a href="index.html">Home</a> &nbsp;/&nbsp;
+          <a href="index.html#programs">Programs</a> &nbsp;/&nbsp; Scholarships
+        </span>
+
+        <div class="prog-hero__grid">
+          <div class="prog-hero__body">
+            <p class="section-head__eyebrow">Program · Education</p>
+            <div class="prog-hero__icon" aria-hidden="true">&#127891;</div>
+            <h1 class="section-head__title">Scholarships</h1>
+            <p class="prog-hero__text">Talent shouldn't be limited by finances. Our Scholarship program offers both merit and need-based scholarships, helping bright, hardworking students continue their education from school through college and beyond.</p>
+            <div class="prog-hero__buttons">
+              <a href="donate.html" class="btn btn--accent">Support This Program</a>
+              <a href="index.html#contact" class="btn btn--ghost">Get In Touch</a>
+            </div>
+          </div>
+
+          <div class="prog-hero__media">
+            <img
+              src="images/school.png"
+              alt="Students receiving scholarship support to continue their education"
+              loading="lazy"
+            />
+            <div class="about__badge">
+              <span class="about__badge-num">800+</span>
+              <span class="about__badge-text">Scholarships Awarded</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHAT WE DO ============ -->
+    <section class="prog-highlights" aria-label="Scholarships highlights">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-head__eyebrow">How We Help</p>
+          <h2 class="section-head__title">Opening The Door To Higher Education</h2>
+          <p class="section-head__text">We support students at the moments that matter most — enrolment, exams, and the leap to college.</p>
+        </div>
+
+        <div class="prog-highlights__grid">
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">&#127942;</div>
+            <h3>Merit Scholarships</h3>
+            <p>Awards for top-performing students to recognize and sustain academic excellence.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">&#129516;</div>
+            <h3>Need-Based Scholarships</h3>
+            <p>Financial support for students from low-income households at risk of dropping out.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">&#127979;</div>
+            <h3>Higher Education Support</h3>
+            <p>Guidance and funding assistance for college admissions and entrance exams.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROGRAM IMPACT ============ -->
+    <section class="prog-stats" aria-label="Scholarships impact in numbers">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-head__eyebrow">Our Impact</p>
+          <h2 class="section-head__title">Investing In Bright Futures</h2>
+        </div>
+
+        <div class="prog-stats__grid">
+          <div class="impact__card">
+            <div class="impact__number">800+</div>
+            <p class="impact__label">Scholarships Awarded</p>
+          </div>
+          <div class="impact__card">
+            <div class="impact__number">95%+</div>
+            <p class="impact__label">Continued Education</p>
+          </div>
+          <div class="impact__card">
+            <div class="impact__number">18</div>
+            <p class="impact__label">Partner Institutions</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="prog-cta" aria-label="Support Scholarships">
+      <div class="container">
+        <h2>Fund A Student's Scholarship</h2>
+        <p>Your donation helps a deserving student continue their education without financial worry.</p>
+        <div class="prog-cta__buttons">
+          <a href="donate.html" class="btn btn--accent">Donate Now</a>
+          <a href="index.html#programs" class="btn btn--ghost" style="border-color:#fff;color:#fff;">Explore Other Programs</a>
+        </div>
+      </div>
+    </section>
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" aria-label="Site footer">
+      <div class="container footer__grid">
+        <div class="footer__col footer__col--about">
+          <a href="index.html#home" class="footer__logo">
+            <span class="nav__logo-mark"></span>
+            <span>Anagha Trust</span>
+          </a>
+          <p class="footer__about">
+            Anagha Educational &amp; Welfare Trust is dedicated to empowering
+            communities through education, healthcare, and sustainable
+            development since 2010.
+          </p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook" class="footer__social-link">f</a>
+            <a href="#" aria-label="Twitter" class="footer__social-link">t</a>
+            <a href="#" aria-label="Instagram" class="footer__social-link"
+              >in</a
+            >
+            <a href="#" aria-label="YouTube" class="footer__social-link">yt</a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Programs</h4>
+          <ul>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="healthcare.html">Healthcare</a></li>
+            <li><a href="women-empowerment.html">Women Empowerment</a></li>
+            <li><a href="skill-development.html">Skill Development</a></li>
+            <li><a href="disaster-relief.html">Disaster Relief</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#impact">Our Impact</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#volunteer">Volunteer</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__col--newsletter">
+          <div class="wa-subscribe">
+            <div class="wa-subscribe__icon">
+              <svg
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="#ffffff"
+              >
+                <path
+                  d="M16.004 3C9.376 3 4 8.373 4 15c0 2.276.633 4.402 1.732 6.216L4 29l7.98-1.688A11.93 11.93 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3zm0 21.7c-1.95 0-3.77-.55-5.318-1.5l-.382-.227-4.73 1.001 1.02-4.6-.25-.395A9.66 9.66 0 0 1 6.3 15c0-5.35 4.353-9.7 9.704-9.7 5.35 0 9.7 4.35 9.7 9.7 0 5.352-4.35 9.7-9.7 9.7zm5.34-7.26c-.293-.147-1.734-.856-2.003-.954-.268-.098-.464-.147-.66.147-.196.293-.757.953-.928 1.15-.17.196-.34.22-.634.073-.293-.147-1.237-.456-2.356-1.454-.87-.776-1.458-1.735-1.629-2.028-.17-.293-.018-.451.128-.598.132-.131.293-.34.44-.51.146-.17.195-.293.293-.488.098-.196.049-.367-.024-.514-.073-.147-.66-1.59-.904-2.178-.238-.573-.48-.495-.66-.504-.17-.008-.366-.01-.562-.01-.196 0-.514.073-.783.367-.269.293-1.027 1.004-1.027 2.448 0 1.444 1.052 2.84 1.198 3.036.146.196 2.07 3.16 5.017 4.432.701.303 1.248.484 1.675.62.704.224 1.344.192 1.85.117.564-.084 1.734-.709 1.979-1.393.244-.684.244-1.27.171-1.393-.073-.122-.269-.196-.562-.343z"
+                />
+              </svg>
+            </div>
+            <h4 class="footer__heading">Talk to Us Instantly</h4>
+            <p>
+              Share your name — we'll open WhatsApp so you can chat with us
+              directly.
+            </p>
+            <form class="wa-subscribe__form" id="newsletterForm" novalidate>
+              <input
+                type="text"
+                name="name"
+                id="waName"
+                placeholder="Your name"
+                aria-label="Your name"
+                required
+              />
+              <button type="submit" class="btn btn--accent wa-subscribe__btn">
+                <svg
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M16.004 3C9.376 3 4 8.373 4 15c0 2.276.633 4.402 1.732 6.216L4 29l7.98-1.688A11.93 11.93 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3zm0 21.7c-1.95 0-3.77-.55-5.318-1.5l-.382-.227-4.73 1.001 1.02-4.6-.25-.395A9.66 9.66 0 0 1 6.3 15c0-5.35 4.353-9.7 9.704-9.7 5.35 0 9.7 4.35 9.7 9.7 0 5.352-4.35 9.7-9.7 9.7zm5.34-7.26c-.293-.147-1.734-.856-2.003-.954-.268-.098-.464-.147-.66.147-.196.293-.757.953-.928 1.15-.17.196-.34.22-.634.073-.293-.147-1.237-.456-2.356-1.454-.87-.776-1.458-1.735-1.629-2.028-.17-.293-.018-.451.128-.598.132-.131.293-.34.44-.51.146-.17.195-.293.293-.488.098-.196.049-.367-.024-.514-.073-.147-.66-1.59-.904-2.178-.238-.573-.48-.495-.66-.504-.17-.008-.366-.01-.562-.01-.196 0-.514.073-.783.367-.269.293-1.027 1.004-1.027 2.448 0 1.444 1.052 2.84 1.198 3.036.146.196 2.07 3.16 5.017 4.432.701.303 1.248.484 1.675.62.704.224 1.344.192 1.85.117.564-.084 1.734-.709 1.979-1.393.244-.684.244-1.27.171-1.393-.073-.122-.269-.196-.562-.343z"
+                  />
+                </svg>
+                Chat on WhatsApp
+              </button>
+            </form>
+            <p class="form-message" id="newsletterMessage" role="status"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <p>
+            &copy; <span id="year"></span> Anagha Educational &amp; Welfare
+            Trust. All rights reserved.
+          </p>
+          <p>
+            <a href="#">Privacy Policy</a> &nbsp;|&nbsp;
+            <a href="#">Terms of Use</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============ BACK TO TOP ============ -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      &#8593;
+    </button>
+
+    <!-- ============ WHATSAPP FLOATING ICON ============ -->
+    <a
+      href="https://wa.me/919008762525?text=Hello%2C%20I%20would%20like%20to%20know%20more%20details%20about%20the%20trust"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat with us on WhatsApp"
+    >
+      <svg
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="#ffffff"
+      >
+        <path
+          d="M16.004 3C9.376 3 4 8.373 4 15c0 2.276.633 4.402 1.732 6.216L4 29l7.98-1.688A11.93 11.93 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3zm0 21.7c-1.95 0-3.77-.55-5.318-1.5l-.382-.227-4.73 1.001 1.02-4.6-.25-.395A9.66 9.66 0 0 1 6.3 15c0-5.35 4.353-9.7 9.704-9.7 5.35 0 9.7 4.35 9.7 9.7 0 5.352-4.35 9.7-9.7 9.7zm5.34-7.26c-.293-.147-1.734-.856-2.003-.954-.268-.098-.464-.147-.66.147-.196.293-.757.953-.928 1.15-.17.196-.34.22-.634.073-.293-.147-1.237-.456-2.356-1.454-.87-.776-1.458-1.735-1.629-2.028-.17-.293-.018-.451.128-.598.132-.131.293-.34.44-.51.146-.17.195-.293.293-.488.098-.196.049-.367-.024-.514-.073-.147-.66-1.59-.904-2.178-.238-.573-.48-.495-.66-.504-.17-.008-.366-.01-.562-.01-.196 0-.514.073-.783.367-.269.293-1.027 1.004-1.027 2.448 0 1.444 1.052 2.84 1.198 3.036.146.196 2.07 3.16 5.017 4.432.701.303 1.248.484 1.675.62.704.224 1.344.192 1.85.117.564-.084 1.734-.709 1.979-1.393.244-.684.244-1.27.171-1.393-.073-.122-.269-.196-.562-.343z"
+        />
+      </svg>
+    </a>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
