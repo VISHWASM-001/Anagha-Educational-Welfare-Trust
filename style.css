@@ -625,36 +625,67 @@ textarea {
 .about__features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-2);
+  gap: var(--space-3);
 }
 
 .feature-card {
-  padding: var(--space-3);
-  border-radius: var(--radius);
+  padding: var(--space-4) var(--space-3);
+  border-radius: var(--radius-lg);
   background: var(--card);
   border: 1px solid var(--border);
-  text-align: center;
+  border-top: 4px solid var(--secondary);
+  text-align: left;
+  position: relative;
+  box-shadow: var(--shadow-sm);
   transition:
     transform var(--transition),
-    box-shadow var(--transition);
+    box-shadow var(--transition),
+    border-color var(--transition);
 }
 .feature-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-top-color: var(--accent);
+}
+.feature-card:nth-child(2) {
+  border-top-color: var(--accent);
+}
+.feature-card:nth-child(2):hover {
+  border-top-color: var(--secondary);
+}
+.feature-card:nth-child(3) {
+  border-top-color: var(--success);
 }
 .feature-card__icon {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--secondary-50);
+  font-size: 1.9rem;
+  margin-bottom: var(--space-2);
+  transition: transform var(--transition);
+}
+.feature-card:nth-child(2) .feature-card__icon {
+  background: var(--accent-50);
+}
+.feature-card:nth-child(3) .feature-card__icon {
+  background: var(--success-50);
+}
+.feature-card:hover .feature-card__icon {
+  transform: scale(1.1) rotate(-4deg);
 }
 .feature-card h3 {
   font-family: var(--font-heading);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.15rem;
   color: var(--primary);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 .feature-card p {
-  font-size: 0.85rem;
+  font-size: 0.92rem;
+  line-height: 1.6;
   color: var(--gray-600);
 }
 
@@ -666,8 +697,8 @@ textarea {
 
 .programs__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-3);
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
 }
 
 /* Interactive category filters */
@@ -720,21 +751,24 @@ textarea {
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   overflow: hidden;
+  cursor: pointer;
   transition:
     transform var(--transition),
     box-shadow var(--transition),
+    border-color var(--transition),
     opacity var(--transition);
 }
 .program-card.is-hidden {
   display: none;
 }
 .program-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px) scale(1.015);
   box-shadow: var(--shadow-lg);
+  border-color: var(--accent);
 }
 
 .program-card__media {
-  height: 180px;
+  height: 240px;
   overflow: hidden;
 }
 .program-card__media img {
@@ -748,35 +782,40 @@ textarea {
 }
 
 .program-card__body {
-  padding: var(--space-3);
+  padding: var(--space-4);
 }
 
 .program-card__icon {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   display: grid;
   place-items: center;
-  border-radius: 12px;
+  border-radius: 14px;
   background: var(--primary-50);
-  font-size: 1.4rem;
-  margin-top: -56px;
+  font-size: 1.6rem;
+  margin-top: -64px;
   margin-bottom: var(--space-2);
   position: relative;
   border: 3px solid var(--card);
+  transition: transform var(--transition), background var(--transition);
+}
+.program-card:hover .program-card__icon {
+  transform: scale(1.08);
+  background: var(--accent);
 }
 
 .program-card__title {
   font-family: var(--font-heading);
   font-weight: 600;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   color: var(--primary);
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 
 .program-card__text {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--gray-600);
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-3);
 }
 
 .program-card__link {
@@ -1392,7 +1431,7 @@ textarea {
 
 .footer__grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  grid-template-columns: 1.3fr 1fr;
   gap: var(--space-5);
   padding-bottom: var(--space-8);
 }
