@@ -1082,11 +1082,11 @@ textarea {
 }
 
 .testimonial__photo {
-  width: 88px;
-  height: 88px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   overflow: hidden;
-  margin: 0 auto var(--space-2);
+  margin: 0 auto var(--space-3);
   border: 4px solid var(--accent-50);
 }
 .testimonial__photo img {
@@ -1836,6 +1836,10 @@ textarea {
   }
   .testimonial-track {
     margin: 0 -1px;
+  }
+  .testimonial__photo {
+    width: 120px;
+    height: 120px;
   }
 
   .donate__form,
