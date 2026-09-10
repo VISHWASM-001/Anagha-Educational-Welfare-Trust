@@ -797,7 +797,9 @@ textarea {
   margin-bottom: var(--space-2);
   position: relative;
   border: 3px solid var(--card);
-  transition: transform var(--transition), background var(--transition);
+  transition:
+    transform var(--transition),
+    background var(--transition);
 }
 .program-card:hover .program-card__icon {
   transform: scale(1.08);
@@ -1079,7 +1081,9 @@ textarea {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
   margin: 0 var(--space-1);
-  transition: box-shadow var(--transition), transform var(--transition);
+  transition:
+    box-shadow var(--transition),
+    transform var(--transition);
 }
 .testimonial:hover {
   box-shadow: var(--shadow-lg);
@@ -1146,6 +1150,7 @@ textarea {
 .testimonial__role {
   margin-top: 0.4rem;
 }
+
 .testimonial__role span {
   display: inline-block;
   font-size: 0.8rem;
